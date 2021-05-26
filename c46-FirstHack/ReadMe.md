@@ -13,3 +13,6 @@ After Karen started working for 'TAAUSAI,' she began to do some illegal activiti
 You acquired a disk image and found that Karen uses Linux OS on her machine. Analyze the disk image of Karen's computer and answer the provided questions.
 
 ![Challenge Question](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/c46FirstHackQuestions.png)
+
+
+[Solutions](Solutions.md)
