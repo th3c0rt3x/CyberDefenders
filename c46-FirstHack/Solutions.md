@@ -97,3 +97,8 @@ pwd
 Reviewing the log directory, we find the same to be true of the other logs
 ![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/c46_7.PNG)
 ### Flag : 0
+
+## 8  It is believed this machine was used to attack another. What file proves this? 
+ While searching through the image, I was able to locate a screenshot within the /root/. This file is located at ‘/root/irZLAohL.jpeg’ 
+ ![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/irZLAohL.jpeg)
+ ### Flag : irZLAohL.jpeg
