@@ -144,3 +144,11 @@ ERROR   : volatility.debug    : This command does not support the profile Win7SP
 0x13fc857e0        TCPv4    -:49167                        72.51.60.132:443     CLOSED           1272     EXCEL.EXE      
 ```
 ### Flag : 10.0.0.101
+
+
+## 6  Based on the answer regarding the infected PID, can you determine the IP of the attacker? 
+as we can run the above command on for the infected PID with IP address of attacker just search the process UWkpjFjDzM.exe 
+```
+volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 netscan | findstr UWkpjFjDzM.exe
+```
+### Flag : 
