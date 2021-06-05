@@ -150,5 +150,6 @@ ERROR   : volatility.debug    : This command does not support the profile Win7SP
 as we can run the above command on for the infected PID with IP address of attacker just search the process UWkpjFjDzM.exe 
 ```
 volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 netscan | findstr UWkpjFjDzM.exe
+0x13e397190        TCPv4    10.0.0.101:49217               10.0.0.106:4444      ESTABLISHED      3496     UWkpjFjDzM.exe 
 ```
-### Flag : 
+### Flag : 10.0.0.106
