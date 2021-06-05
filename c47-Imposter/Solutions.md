@@ -40,5 +40,5 @@ PS D:\CD\65\c47-Imposter> volatility.exe -f .\Triage-Memory.mem --profile=Win7SP
 
 0xfffffa8005a1d9e0 UWkpjFjDzM.exe         3496   5116      5      109      1      1 2019-03-22 05:35:33 UTC+0000
 ```
-we found same PID which wscript.exe running with child process of UWkpjFjDzM.exe
+we found same PID which UWkpjFjDzM.exe running with child process of wscript.exe
 ### Flag : UWkpjFjDzM.exe
