@@ -181,3 +181,33 @@ Bob:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 
 ```
 ### Flag : aad3b435b51404eeaad3b435b51404ee
+
+## 10  What memory protection constants does the VAD node at 0xfffffa800577ba10 have? 
+ Virtual Address Descriptors (VAD) vadtree and vadinfo are plugin's available with volatility get more info ob ![blogpost](https://resources.infosecinstitute.com/topic/finding-enumerating-processes-within-memory-part-2/)
+ lets try to find the VAD at different nodes if we run below command it will super list of VAD details but we are going to filter out with findstr
+ ```
+ volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 vadinfo | findstr 0xfffffa800577ba
+ ```
+ 
+### Flag : PAGE_READONLY
+
+## 11  What memory protection did the VAD starting at 0x00000000033c0000 and ending at 0x00000000033dffff have? 
+Read above Q10
+### Flag : PAGE_NOACCESS
+
+## 12  There was a VBS script that ran on the machine. What is the name of the script? (submit without file extension) 
+cmdline        	Display process command-line arguments
+```
+PS D:\CD\65\c47-Imposter> volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 cmdline | findstr .vbs
+
+Command line : "C:\Windows\System32\wscript.exe" //B //NOLOGO %TEMP%\vhjReUDEuumrX.vbs
+```
+### Flag : vhjReUDEuumrX
+
+
+## 13  An application was run at 2019-03-07 23:06:58 UTC. What is the name of the program? (Include extension) 
+there is a common artifact used that displays applications or programs that have been executed on a system, along with the timestamps of their execution. It’s called shimcache (also known as AppCompatCache), and of course, volatility has a plugin for it.
+```
+
+```
+### Flag : Skype.exe
