@@ -153,3 +153,8 @@ volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 netscan | findstr UWk
 0x13e397190        TCPv4    10.0.0.101:49217               10.0.0.106:4444      ESTABLISHED      3496     UWkpjFjDzM.exe 
 ```
 ### Flag : 10.0.0.106
+
+
+## 7  How many processes are associated with VCRUNTIME140.dll? 
+Analysts can also check the loaded DLL files associated with a process. This allows the analyst to determine if a suspect process has accessed these files when it was executed. For example, if an analyst would like to examine the DLL files associated with one of the suspected, VCRUNTIME140.dll is a shared service for Office update and Office reated applications, most of the office process uses this dll file. total number of office instaled applications are 5
+### Flag : 5
