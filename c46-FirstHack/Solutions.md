@@ -170,8 +170,8 @@ after examining the firstscript_fixed file observed Yough is charm
 ## 11  Based on the bash history, what is the current working directory? 
  while examine bash history, reviewing the last cd to an absolute path we see that the user changed directory to /root. Thereafter we can review the following cd commands to see what impact they would have on the current working directory.
  ```
- 	Line 9: touch snky snky > /root/Desktop/SuperSecretFile.txt
-	Line 10: cat snky snky > /root/Desktop/SuperSecretFile.txt 
-	Line 69: cd ../root/Documents/myfirsthack/../../Desktop/
-	```
+ Line 9: touch snky snky > /root/Desktop/SuperSecretFile.txt
+Line 10: cat snky snky > /root/Desktop/SuperSecretFile.txt 
+Line 69: cd ../root/Documents/myfirsthack/../../Desktop/
+```
 ### Flag : /root/Documents/myfirsthack/
