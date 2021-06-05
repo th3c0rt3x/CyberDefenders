@@ -80,3 +80,20 @@ touch keys.txt
 pwd
 ```
 ### Flag : binwalk
+
+## 6  What is the third goal from the checklist Karen created? 
+  Check List file is available at location /root/Desktop/Checklist
+  ```
+  Check List:
+
+- Gain Bob's Trust
+- Learn how to hack
+- Profit
+```
+### Flag : Profit
+## 7 How many times was apache run? 
+ We earlier reviewed the apache access log to calculate its hash, and the eagle eyed forensicators among us may have noticed that the hash was ‘d41d8cd98f00b204e9800998ecf8427e’ which is the MD5 associated with a 0 byte file.
+
+Reviewing the log directory, we find the same to be true of the other logs
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/c46_7.PNG)
+### Flag : 0
