@@ -208,6 +208,41 @@ Command line : "C:\Windows\System32\wscript.exe" //B //NOLOGO %TEMP%\vhjReUDEuum
 ## 13  An application was run at 2019-03-07 23:06:58 UTC. What is the name of the program? (Include extension) 
 there is a common artifact used that displays applications or programs that have been executed on a system, along with the timestamps of their execution. It’s called shimcache (also known as AppCompatCache), and of course, volatility has a plugin for it.
 ```
+volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 shimcache | findstr 2019–03–07 
 
+2019–03–07 23:06:58 UTC+0000 \??\C:\Program Files (x86)\Microsoft\Skype for Desktop\Skype.exe
 ```
 ### Flag : Skype.exe
+
+
+## 14  What was written in notepad.exe at the time when the memory dump was captured? 
+Since we know the process number of the notepad which is running while acquired time to RAM image, we need to export hte memdump using voltality, once dmp file is created there are various online tools which they can analyse small dump files I prefer this tools or here we are try to play with strings
+```
+ volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 memdump --pid=3032 --dump-dir=3032
+************************************************************************
+Writing notepad.exe [  3032] to 3032.dmp
+
+strings.exe 3032.dmp | findstr flag<
+```
+### Flag : flag<redbull_is_life>
+
+
+
+## 15  What is the short name of the file at file record 59045? 
+we need to export the mft table usnig mft plugin
+```
+ volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 mftparser >> mft.txt
+ ```
+### Flag : EMPLOY~1.XLS
+
+
+## 16  This box was exploited and is running meterpreter. What was the infected PID? 
+The simple use of the netscan plugin with trusty grep will give you the flag here. Metasploit generally runs on port 4444, so we can see that only one process, PID 3496 (UWkpjFjDzM.exe), is listening on that port.
+### Flag : 3496
+
+
+TrackBack URL 
+ 
+https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
+
+https://www.oreilly.com/library/view/digital-forensics-and/9781787288683/
