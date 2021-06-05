@@ -26,3 +26,19 @@ PS D:\CD\65\c47-Imposter> volatility.exe -f .\Triage-Memory.mem --profile=Win7SP
 0xfffffa80054f9060 notepad.exe            3032   1432      1       60      1      0 2019-03-22 05:32:22 UTC+0000
 ```
 ### Flag : 3032   
+
+## 4  Name the child process of wscript.exe. 
+The flag is about child process of wscript.exe, to find the pid of the wscript.exe process we will use pslist plugin
+```
+PS D:\CD\65\c47-Imposter> volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 pslist | findstr wscript
+0xfffffa8005a80060 wscript.exe            5116   3952      8      312      1      1 2019-03-22 05:35:32 UTC+0000
+```
+from the above output which we have got PID as 5116 for wscript.exe lets check the same PID for child process running.
+```
+PS D:\CD\65\c47-Imposter> volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 pslist | findstr 5116
+0xfffffa8005a80060 wscript.exe            5116   3952      8      312      1      1 2019-03-22 05:35:32 UTC+0000
+
+0xfffffa8005a1d9e0 UWkpjFjDzM.exe         3496   5116      5      109      1      1 2019-03-22 05:35:33 UTC+0000
+```
+we found same PID which wscript.exe running with child process of UWkpjFjDzM.exe
+### Flag : UWkpjFjDzM.exe
