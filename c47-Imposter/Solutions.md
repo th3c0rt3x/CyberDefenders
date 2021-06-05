@@ -11,4 +11,18 @@ The first thing you’ll want to determine when analysing a memory image is it�
 volatility.exe -f .\Triage-Memory.mem imageinfo
 
 ```
-### Flag
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c47-Imposter/c47_2_ver.PNG)
+### Flag : Win7SP1x64
+
+
+## 3  What was the process ID of notepad.exe? 
+pslist is a plugin that outputs all of the processes that were running at the time the dump was created, along with its execution time and process/parent ID’s.
+```
+volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 pslist | findstr notepad.exe
+Where it gives output of notepad.exe pid
+
+PS D:\CD\65\c47-Imposter> volatility.exe -f .\Triage-Memory.mem --profile=Win7SP1x64 pslist | findstr notepad.exe
+
+0xfffffa80054f9060 notepad.exe            3032   1432      1       60      1      0 2019-03-22 05:32:22 UTC+0000
+```
+### Flag : 3032   
