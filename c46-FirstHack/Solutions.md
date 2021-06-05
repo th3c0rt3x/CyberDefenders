@@ -102,3 +102,31 @@ Reviewing the log directory, we find the same to be true of the other logs
  While searching through the image, I was able to locate a screenshot within the /root/. This file is located at ‘/root/irZLAohL.jpeg’ 
  ![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/irZLAohL.jpeg)
  ### Flag : irZLAohL.jpeg
+ 
+## 9  Within the Documents file path, it is believed that Karen was taunting a fellow computer expert through a bash script. Who was Karen taunting? 
+This was bit tricy Question which takes much of your time. as per question karen is tauting with files under Documents file path, lets review .bash_history along with Documents file folder, we can observe there are couple of files available. lets look into what exactly these files consists of  
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/c46_9.PNG)
+File : bob.txt contains 0 bytes which indicate it does have nothing 
+File : firstscript
+```
+pwd
+ip route | grep default
+netstat | grep 80
+```
+File : firstscript_fixed
+```
+echo "Showing you your current path"
+pwd
+echo "Show my default route"
+ip route | grep --color default
+echo "Show network connections w/ port 80"
+netstat | grep --color 80
+echo "Heck yeah! I can write bash too Young"
+```
+File : helloworld.sh
+```
+echo "hello world!"
+```
+after examining the firstscript_fixed file observed Yough is charm
+
+### Flag : Young
