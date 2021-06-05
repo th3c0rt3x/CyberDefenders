@@ -130,3 +130,39 @@ echo "hello world!"
 after examining the firstscript_fixed file observed Yough is charm
 
 ### Flag : Young
+
+## 10 A user su'd to root at 11:26 multiple times. Who was it?
+  su events are recorded in the auth log at ‘/var/log/auth.log’, we can quickly parse this for events at that time using the following using notepad++ which we got below output:
+ ```
+ Line 1179: Mar 20 11:26:22 KarenHacker su[4060]: Successful su for postgres by root
+	Line 1180: Mar 20 11:26:22 KarenHacker su[4060]: + ??? root:postgres
+	Line 1181: Mar 20 11:26:22 KarenHacker su[4060]: pam_unix(su:session): session opened for user postgres by (uid=0)
+	Line 1182: Mar 20 11:26:22 KarenHacker su[4060]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+	Line 1183: Mar 20 11:26:22 KarenHacker su[4060]: pam_unix(su:session): session closed for user postgres
+	Line 1184: Mar 20 11:26:22 KarenHacker su[4074]: Successful su for postgres by root
+	Line 1185: Mar 20 11:26:22 KarenHacker su[4074]: + ??? root:postgres
+	Line 1186: Mar 20 11:26:22 KarenHacker su[4074]: pam_unix(su:session): session opened for user postgres by (uid=0)
+	Line 1187: Mar 20 11:26:22 KarenHacker su[4074]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+	Line 1188: Mar 20 11:26:22 KarenHacker su[4074]: pam_unix(su:session): session closed for user postgres
+	Line 1189: Mar 20 11:26:22 KarenHacker su[4081]: Successful su for postgres by root
+	Line 1190: Mar 20 11:26:22 KarenHacker su[4081]: + /dev/pts/0 root:postgres
+	Line 1191: Mar 20 11:26:22 KarenHacker su[4081]: pam_unix(su:session): session opened for user postgres by (uid=0)
+	Line 1192: Mar 20 11:26:22 KarenHacker su[4081]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+	Line 1193: Mar 20 11:26:22 KarenHacker su[4081]: pam_unix(su:session): session closed for user postgres
+	Line 1194: Mar 20 11:26:22 KarenHacker su[4094]: Successful su for postgres by root
+	Line 1195: Mar 20 11:26:22 KarenHacker su[4094]: + /dev/pts/0 root:postgres
+	Line 1196: Mar 20 11:26:22 KarenHacker su[4094]: pam_unix(su:session): session opened for user postgres by (uid=0)
+	Line 1197: Mar 20 11:26:22 KarenHacker su[4094]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+	Line 1198: Mar 20 11:26:22 KarenHacker su[4094]: pam_unix(su:session): session closed for user postgres
+	Line 1199: Mar 20 11:26:22 KarenHacker su[4101]: Successful su for postgres by root
+	Line 1200: Mar 20 11:26:22 KarenHacker su[4101]: + /dev/pts/0 root:postgres
+	Line 1201: Mar 20 11:26:22 KarenHacker su[4101]: pam_unix(su:session): session opened for user postgres by (uid=0)
+	Line 1202: Mar 20 11:26:22 KarenHacker su[4101]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+	Line 1203: Mar 20 11:26:23 KarenHacker su[4101]: pam_unix(su:session): session closed for user postgres
+	Line 1204: Mar 20 11:26:23 KarenHacker su[4114]: Successful su for postgres by root
+	Line 1205: Mar 20 11:26:23 KarenHacker su[4114]: + /dev/pts/0 root:postgres
+	Line 1206: Mar 20 11:26:23 KarenHacker su[4114]: pam_unix(su:session): session opened for user postgres by (uid=0)
+	Line 1207: Mar 20 11:26:23 KarenHacker su[4114]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+	Line 1208: Mar 20 11:26:23 KarenHacker su[4114]: pam_unix(su:session): session closed for user postgres
+  ```
+  ### Flag : postgres
