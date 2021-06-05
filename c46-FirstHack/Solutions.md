@@ -36,3 +36,47 @@ Mar 21 18:53:38 KarenHacker kernel: [    0.000000] Command line: BOOT_IMAGE=/boo
   ![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/c46_2A.PNG)
 ### Flag : D41D8CD98F00B204E9800998ECF8427E
 ![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/c46_2A_1.PNG)
+
+## 3 It is believed that a credential dumping tool was downloaded? What is the file name of the download? 
+  As you are Forensic analyst you should be anayzing the download folders most of the downloads are at users to Downloads location, when we observe the ad1 image which has only 3 folders /root /boot /var
+  ### Flag : mimikatz_trunk.zip
+ ![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c46-FirstHack/C46_3A.PNG)
+  
+## 4  There was a super-secret file created. What is the absolute path? 
+  Since the flag hint it self show as the super-secrect file is under /root folder, we will look int the files which are avaiable with /root folder, and I did get no luck with the .txt file under /root folder, at the same thought of check with bash_history where we can able to find the SuperSecrect File
+```
+systemctl status postgresql
+systemctl enable postgresql
+systemctl start postgresql
+msfconsole
+msfdb init
+msfconsole
+shutdown now
+touch snky snky > /root/Desktop/SuperSecretFile.txt
+cat snky snky > /root/Desktop/SuperSecretFile.txt 
+msfconsole 
+clear
+history
+clear
+history
+whoami
+hack
+do hack
+```
+### Flag : /root/Desktop/SuperSecretFile.txt
+
+## 5 What program used didyouthinkwedmakeiteasy.jpg during execution? 
+clearly it was trick question which platform want to test your beginner skills where most if the programs which are been executed on attacker machine will be avail with .bash_history
+```
+sudo apt-get install moo
+lol Castro just failed at all these commands. Someone pat him on the back. 
+I tried okay
+history > history.txt
+binwalk didyouthinkwedmakeiteasy.jpg 
+clear
+history
+exit
+touch keys.txt
+pwd
+```
+### Flag : binwalk
