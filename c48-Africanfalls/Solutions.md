@@ -30,7 +30,39 @@ Lets Unzip c48-Africanfalls.zip
 ![Disk Digger](Zip2.PNG)
 
 ## 1	What is the MD5 hash value of the suspect disk? 
+Once you extract the zip file we can verify the checksum/md5 using couple of md5 tools or else we can find the txt file DiskDrigger.ad1.txt which contains the information about ad1 file
 
+```
+Created By AccessData® FTK® Imager 4.5.0.3 
+
+Case Information: 
+Acquired using: ADI4.5.0.3
+Case Number: 
+Evidence Number: 
+Unique Description: 
+Examiner: 
+Notes: 
+
+
+[Computed Hashes]
+ MD5 checksum:    9471e69c95d8909ae60ddff30d50ffa1
+ SHA1 checksum:   167aa08db25dfeeb876b0176ddc329a3d9f2803a
+
+Image information:
+ Acquisition started:   Tue Jun 15 12:28:20 2021
+ Acquisition finished:  Tue Jun 15 12:33:10 2021
+ Segment list:
+  D:\Users\Mawso3a\Desktop\DiskDrigger.ad1
+
+Image Verification Results:
+ Verification started:  Tue Jun 15 12:33:18 2021
+ Verification finished: Tue Jun 15 12:33:51 2021
+ MD5 checksum:    9471e69c95d8909ae60ddff30d50ffa1 : verified
+ SHA1 checksum:   167aa08db25dfeeb876b0176ddc329a3d9f2803a : verified
+
+```
+
+### Flag : 9471e69c95d8909ae60ddff30d50ffa1
 
 ## 2	 What phrase did the suspect search for on 2021-04-29 18:17:38 UTC? (three words, two spaces in between) 
 
