@@ -23,6 +23,12 @@ This respective challenge designed to recall couple of techniques for investigat
 
 Lets walk-through one by one
 
+Lets Unzip c48-Africanfalls.zip
+
+![Initial zip](/Zip.PNG)
+
+![Disk Digger](/Zip1.PNG)
+
 ## 1	What is the MD5 hash value of the suspect disk? 
 
 
