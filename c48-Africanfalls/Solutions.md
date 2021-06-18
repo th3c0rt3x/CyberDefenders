@@ -14,7 +14,7 @@ Since I am usng old latop which can't be instaled with FTK or some other disk fo
 
 As discussed earlier I will be using Forensic 7z Plug-in for extracting ad1 image (tc4shell has tutorial how to install plugin).
 
-This respective challenge designed to recall couple of techniques for investigator on below topics
+This respective challenge was designed to recall couple of techniques for investigator on below topics
 * Browser Forensics
 * Prefetch Forensics
 * ShellBags 
@@ -25,9 +25,9 @@ Lets walk-through one by one
 
 Lets Unzip c48-Africanfalls.zip
 
-![Initial zip](/Zip.PNG)
+![Initial zip](Zip.PNG)
 
-![Disk Digger](/Zip1.PNG)
+![Disk Digger](Zip2.PNG)
 
 ## 1	What is the MD5 hash value of the suspect disk? 
 
