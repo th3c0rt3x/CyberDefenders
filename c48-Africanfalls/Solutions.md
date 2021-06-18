@@ -10,7 +10,7 @@ Tools Used
 
 Just extract the zip file using 7-zip or your preffered zip tools and verify the check sum.
 
-Since I am usng old latop which can't be instaled with FTK or some other disk forensics tool, I prefer to working to alternate tools can works with my Win 7 32 bit machine.
+Since I am usng old latop which can't be instaled with FTK or some other disk forensics tool, I prefer to working with alternate tools which can works on my Win 7 32 bit machine.
 
 As discussed earlier I will be using Forensic 7z Plug-in for extracting ad1 image (tc4shell has tutorial how to install plugin).
 
