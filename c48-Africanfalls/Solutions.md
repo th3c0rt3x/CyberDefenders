@@ -1,3 +1,4 @@
+
 I will try to run walk-through using simple methods not with indepth tools.
 
 Tools Used 
@@ -63,8 +64,10 @@ Image Verification Results:
  SHA1 checksum:   167aa08db25dfeeb876b0176ddc329a3d9f2803a : verified
 
 ```
-
-### Flag : 9471e69c95d8909ae60ddff30d50ffa1
+```diff
++Flag : 9471e69c95d8909ae60ddff30d50ffa1
+```
+<hr>
 
 ## 2	 What phrase did the suspect search for on 2021-04-29 18:17:38 UTC? (three words, two spaces in between) 
 As Question itself indicates that user activity which he tried to search for something suspicious.
@@ -109,7 +112,10 @@ Lets Open Chrome artifacts (SQLite) File and export **keyword_search_terms** tab
 
 ![SQLite History](Q2_SQLite.PNG)
 
-### Flag : password cracking lists
+```diff
++Flag : password cracking lists
+```
+<hr>
 
 ## 3	 What is the IPv4 address of the FTP server the suspect connected to? 
 
