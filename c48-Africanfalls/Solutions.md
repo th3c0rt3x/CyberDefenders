@@ -122,7 +122,7 @@ Its wasn't be a tricky question if you look for Q2 which we already  have some i
 
 Lets examine Filezilla artifacts **User\John Doe\AppData\Roaming\FileZilla\filezilla.xml**
 
-![FileZilla](FileZillas.PNG)
+![FileZilla](FileZilla.PNG)
 
 ```diff
 + Flag : 192.168.1.20
