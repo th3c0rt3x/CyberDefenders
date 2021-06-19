@@ -149,7 +149,7 @@ Lets examine the prefect folder using couple of freely avaiable tools like as Wi
 
 Prefetch folder are avaiable in **\root\Windows\Prefetch** where we have file name with **TORBROWSER-INSTALL-WIN64-10.0-F3C4DF19.pf** file 
 
-![Prefectch](Prefectch.PNGs)
+![Prefectch](Prefectch.PNG)
 
 ```diff
 + Flag : 0
