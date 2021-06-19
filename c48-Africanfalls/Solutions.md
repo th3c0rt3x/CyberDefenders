@@ -1,4 +1,3 @@
-
 I will try to run walk-through using simple methods not with indepth tools.
 
 Tools Used 
@@ -65,7 +64,7 @@ Image Verification Results:
 
 ```
 ```diff
-+Flag : 9471e69c95d8909ae60ddff30d50ffa1
++ Flag : 9471e69c95d8909ae60ddff30d50ffa1
 ```
 <hr>
 
@@ -111,35 +110,156 @@ Lets Open Chrome artifacts (SQLite) File and export **keyword_search_terms** tab
 ![Decode Chrome Time](Dcode.PNG)
 
 ![SQLite History](Q2_SQLite.PNG)
-
 ```diff
-+Flag : password cracking lists
++ Flag : password cracking lists
 ```
+
 <hr>
 
 ## 3	 What is the IPv4 address of the FTP server the suspect connected to? 
 
+Its wasn't be a tricky question if you look for Q2 which we already  have some information about aplications been installed with respective image, Lets try to find instaled apps usnig different techniques (AppData), where can able to find the FileZilla app.
+
+Lets examine Filezilla artifacts **User\John Doe\AppData\Roaming\FileZilla\filezilla.xml**
+
+![FileZilla](FileZillas.PNG)
+
+```diff
++ Flag : 192.168.1.20
+```
 
 ## 4	 What date and time was a password list deleted in UTC? (YYYY-MM-DD HH:MM:SS UTC) 
+
+Deleted ?? lets examine $ReCycle.Bin folder for the deleted files usnig **RBCmd Tool from EZTools** 
+
+Check for **/$Recycle.Bin/S-1-5-21-3061953532-2461696977-1363062292-1001/"**
+
+Where we can able to find the find 
+
+```diff
++ Flag : 2021-04-29 18:22:17 UTC
+```
 
 
 ## 5	 How many times was Tor Browser ran on the suspect's computer? (number only) 
 
+Prefetch files are temporary files stored in the System folder name as a prefetch. Prefetch is a memory management feature. The log about the frequently running application on your machine is stored in the prefetch folder. The log is encrypted in Hash Format so that no one can easily decrypt the data of the application. These files can be used to extract timestamp and other resources consumed when the file executes.
+
+Lets examine the prefect folder using couple of freely avaiable tools like as WinPrefectchView from NirSoft or PEcmd.exe
+
+Prefetch folder are avaiable in **\root\Windows\Prefetch** where we have file name with **TORBROWSER-INSTALL-WIN64-10.0-F3C4DF19.pf** file 
+
+![Prefectch](Prefectch.PNGs)
+
+```diff
++ Flag : 0
+```
 
 ## 6	 What is the suspect's email address? 
 
+Again we need to look into browser artifacts since we haven't found anything related to mail clients with in the given image.
+
+Check History related to "mail.protonmail.com". The email address is "dreammaker82@protonmail.com".
+
+```diff
++ Flag : dreammaker82@protonmail.com
+```
 
 ## 7	 What is the FQDN did the suspect port scan? 
 
+Lets check for the command line history snice the given image host is WIN64-10 let examine the power shell command line history usnig from Users AppData
+
+artifacts location **Users/John Doe/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt**
+
+```
+bettercap
+bettercap --check-updates
+bettercap -S
+bettercap -X --no-spoofing
+bettercap -version
+bettercap -eval "caplets.update; ui.update; q"
+bettercap -caplet http-ui
+ipconfig
+nmap -Sp 10.0.2.15
+nmap -Sp 10.0.2.1-254
+nmap -sP 10.0.2.1-254
+ping 10.0.2.2.
+ping 10.0.2.2
+exit
+sdelete
+ipconfig
+ipconfig /cleardns
+ipconfig /flushdns
+exit
+sdelete
+exit
+ipconfig /flushdns
+ping dfir.science
+nmap dfir.science
+dir
+cd .\Documents\
+dir
+sdelete .\accountNum
+sdelete .\accountNum.zip
+exit
+cd E:\FTK_Imager_Lite_3.1.1
+& '.\FTK Imager.exe'
+exit
+```
+
+```diff
++ Flag : dfir.science
+```
 
 ## 8	 What country was picture "20210429_152043.jpg" allegedly taken in? 
+Pictures ?? Lets examine Pictures folder under User John Doe for picture **"20210429_152043.jpg"**
 
+![GPS](GPS.PNG)
+
+```
+Latitude : 16; 0; 0
+Longitude : 23; 0 ;0
+```
+
+Lets search the coordinates usnig Gmaps which it will the location of the image.
+
+or lets upload image to  https://www.pic2map.com/  get the location of the image since it has meta data (you can use exfil tool both commandline or website to get the same data)
+
+![Gmaps](GPS1.PNG)
+
+```diff
++ Flag : Zambia
+```
 
 ## 9	 What is the parent folder name picture "20210429_151535.jpg" was in before the suspect copy it to "contact" folder on his desktop? 
+After extracting metadata, The photo was taken by LG mobile phone.
 
+![](9.PNG)
+
+Since picture was taken from mobile LG Mobile LM-Q725K 
+
+Lets Check the ShellBags artifacts from **\Users\John Doe\AppData\Local\Microsoft\Windows\Usrclass.dat**
+
+lets get this load to ShellBagsExplorer 
+
+![](9_1.PNG)
+
+```diff
++ Flag : Camera
+```
 
 ## 10	 A Windows password hashes for an account are below. What is the user's password? Anon:1001:aad3b435b51404eeaad3b435b51404ee:3DE1A36F6DDB8E036DFD75E8E20C4AF4::: 
 
+I have tried all these with my internal crack station usnig John
+
+```diff
++ Flag : AFR1CA!
+```
 
 ## 11	 What is the user "John Doe's" Windows login password? 
 
+Try usnig https://hashes.com/en/decrypt/hash
+
+```diff
++ Flag : ctf2021
+```
