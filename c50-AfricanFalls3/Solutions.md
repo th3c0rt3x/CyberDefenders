@@ -119,7 +119,7 @@ Average bits/s
 —
 ```
 
-![Challenge Question](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c50-AfricanFalls3/PcapInfo.PNGs)
+![PcapInfo](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c50-AfricanFalls3/PcapInfo.PNG)
 
 Keep looking 
 <hr>
