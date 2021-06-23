@@ -121,13 +121,18 @@ Average bits/s
 
 ![PcapInfo](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c50-AfricanFalls3/PcapInfo.PNG)
 
-Keep looking 
 <hr>
 
 ## 1	 What is the FTP password? 
 
+Filter for FTP traffic >> Follow FTP Stream
+
+![ftp filter](Q1_0.PNG)
+
+![ftp tcp stream](Q1_1.PNG)
+
 ```diff
-+ Flag : 
++ Flag : AfricaCTF2021
 ```
 <hr>
 
