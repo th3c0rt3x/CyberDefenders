@@ -138,16 +138,34 @@ Filter for FTP traffic >> Follow FTP Stream
 
 ## 2	  What is the IPv6 address of the DNS server used by 192.168.1.26? (####::####:####:####:####) 
 
+Let's load capture file to anayze the DNS traffic, Since we are looking for the DNS server at 192.168.1.26 first let we look for the DNS server for the current capture. DNS Servce run on port 53 with UDP Protocol and we will filter the traffic for port & IPv6
+
+let Look for the actual UDP Traffic from Statistics Menu >> Conversations >> UDP Tab and Check for **Limit to dislpay filter**
+
+
+![Q2_0](Q2_0.PNG)
+ 
+from above image we came to know there is IPv6 DNS traffic server from fe80::b011:ed39:8665:3b0a towards to fe80::c80b:adff:feaa:1db7
+
+
 ```diff
-+ Flag :   
++ Flag :   fe80::c80b:adff:feaa:1db7
 ```
 
 <hr>
 
 ## 3	 What domain is the user looking up in packet 15174? 
 
+Let Goto to packet 15174 by Ctrl+G where it will ask you for Packet number where you want to go
+
+![Go to Packet](Q3_0.PNG)
+
+for Packet 15174 its was IPv6 DNS request for www.7-Zip.org
+
+![Packet 15174](Q3_1.PNG)
+
 ```diff
-+ Flag : 
++ Flag : www.7-zip.org
 ```
 
 ## 4	  How many UDP packets were sent from 192.168.1.26 to 24.39.217.246? 
