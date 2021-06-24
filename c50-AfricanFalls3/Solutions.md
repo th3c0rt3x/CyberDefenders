@@ -160,6 +160,8 @@ Let Goto to packet 15174 by Ctrl+G where it will ask you for Packet number where
 
 ![Go to Packet](Q3_0.PNG)
 
+![Frame Number](Q3_2.PNG)
+
 for Packet 15174 its was IPv6 DNS request for www.7-Zip.org
 
 ![Packet 15174](Q3_1.PNG)
