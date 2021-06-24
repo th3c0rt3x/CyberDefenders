@@ -200,8 +200,19 @@ Since we have got both TCP and UDP packets let filter for only UDP which we have
 
 ## 5	 What is the MAC address of the system being monitored? 
 
+Lets analyze pcap in Wireshark as we know the suspect IP is 192.168.1.26, check Packets with SRC IP 192.168.1.26 aqnd check the SRC MAC address of any packet
+
+Just use the filter ip.src==192.168.1.26 and we have total number of 34038 packets for the source 192.168.1.26
+
+![IP Source](Q5_0.PNG)
+
+Lets examine IP header for the packet src ip 192.168.1.26
+
+![IP Header](Q5_1.PNG)
+
+
 ```diff
-+ Flag : 0
++ Flag : c8:09:a8:57:47:93
 ```
 
 ## 6	 What was the time when the picture 20210429_152157.jpg was taken on the 29th of April? (hh:mm:ss) 
