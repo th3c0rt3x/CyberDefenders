@@ -331,6 +331,14 @@ Line-based text data (9 lines)
 
 ## 11	  What domain was the user connected to in packet 27300? 
 
+Use "frame.number == 27300" filter so that we can get to know the destination IP adress
+
+![Filter 23K](Q11_0.PNG)
+
+Use "dns.a == 172.67.162.206" to show DNS A queries related to the IP.
+
+![dfir domain](Q11_1.PNG)
+
 ```diff
-+ Flag : 
++ Flag : dfir.science
 ```
