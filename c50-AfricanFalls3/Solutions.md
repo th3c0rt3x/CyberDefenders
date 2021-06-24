@@ -274,8 +274,30 @@ the first packet with number 17992 is initiated client hello with protonmail.com
 
 ## 9	   What country is the MAC address of the FTP server registered in? (two words, one space in between) 
 
+Lets reload the same PCAP file in wireshark, and search for destinaton IP 192.168.1.20
+
+ip.dst == 192.168.1.20 && ftp
+
+![FTP Macaddress](Q9_0.PNG)
+
+where we have found the mac address of the FTP Server 192.168.1.20 : 08:00:27:a6:1f:86
+
+Let check the vendor and location of vendor using https://www.ipchecktool.com/tool/macfinder
+
+![Mac Location](Q9_1.PNG)
+
+```
+ The MAC address "08:00:27:a6:1f:86" has been assigned by the IEEE to:
+MAC-Segment: 	80:02:70:00:00:00 - 80:02:7F:FF:FF:F0 (MA-L)
+Vendor: 	PCS Systemtechnik GmbH
+Address: 	600 Suffold St
+Lowell MA 01854
+US
+``
+
+
 ```diff
-+ Flag : 
++ Flag : United States
 ```
 
 ## 10	  What time was a non-standard folder created on the FTP server on the 20th of April? (hh:mm) 
