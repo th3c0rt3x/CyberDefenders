@@ -160,6 +160,8 @@ Let Goto to packet 15174 by Ctrl+G where it will ask you for Packet number where
 
 ![Go to Packet](Q3_0.PNG)
 
+or else you can use filter "frame.number == 15174"
+
 ![Frame Number](Q3_2.PNG)
 
 for Packet 15174 its was IPv6 DNS request for www.7-Zip.org
