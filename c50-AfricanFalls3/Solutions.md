@@ -217,8 +217,36 @@ Lets examine IP header for the packet src ip 192.168.1.26
 
 ## 6	 What was the time when the picture 20210429_152157.jpg was taken on the 29th of April? (hh:mm:ss) 
 
+Its look like a simple tricky to find out the extact time of the captured images 20210429_152157.jpg.
+
+we can use "frame contains" filter lets try our luck with filter "frame contains 20210429_152157"
+
+![contains Filter](Q6_0.PNG)
+
+or else we can use filter "ftp-data" along with Search for Image Strings 20210429_152157.jpg
+
+![Full Filter](Q6_1.PNG)
+
+Let Examine the packet which has exif data of file 20210429_152157.jpg
+
+![Image Datails](Q6_2.PNG)
+
+```
+'¦È	¨WGEè@@ªöÀ¨À¨·ÌWDÃÒÓ¿ÿY
+úñç§AN¾cÿØÿáExifMM*
+	2iÂ(%+K£«³+yLM-Q725K2021:04:29 15:21:57HHLG Electronics|t<'2"°¸¢ÀÇÎ
+Õ	¤Ý +-*Ý
+*ñ¤*ù 0¤+
++ @¤+ £
++%0220 0100ÐuÃ>^áÂ>zE@@ÜÊÀ>VÉ>¨E@@@¬÷ò> A@«Á>ÊÀ>@zE@@RCXí??(Z÷??ìQx?7ô>'þ?Ñ,?¸£Ï>A?zzzzzzzzzzz  0  0ffabZÒ1`# ¡ |ÀàÀ@0`aÃ²z 22aN+`p+`Pò¶@ÿ+` ò¶@ÿ+`@qpò¶@ÿ+`Ppò¶@ÿ+`Pò¶@ÿ+`@@ò¶ÿ+aG¡0Pò¶ÿ)áQ±@òÿ)¡bP°ò 
+ÿ*Ub`0ò¶ ÿ,Aa¢`òÒ ÿ.a¢pòÒû0ÿ/Aa¢ 0£ 
+:.!_³   0¥*Ña¢
+Rû00¥
+```
+its has answer which 2021:04:29 15:21:57
+
 ```diff
-+ Flag : 
++ Flag : 15:21:57
 ```
 
 ## 7	 What is the server certificate public key that was used in TLS session: da4a0000342e4b73459d7360b4bea971cc303ac18d29b99067e46d16cc07f4ff? 
