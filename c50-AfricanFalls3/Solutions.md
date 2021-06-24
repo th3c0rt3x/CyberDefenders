@@ -301,8 +301,32 @@ US
 
 ## 10	  What time was a non-standard folder created on the FTP server on the 20th of April? (hh:mm) 
 
+Again lets reload the cature packet and check for FTP-Data protocol, look for the response 'LIST' command
+
+![FTP List](Q10_0.PNG)
+
+and examine the packet number #530 for non-standard folder at 20th of April.
+
+![FTP Time](Q10_1.PNG)
+
+```
+[Current working directory: /home/kali]
+Line-based text data (9 lines)
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Desktop\r\n
+    drwxr-xr-x    2 1000     1000         4096 Apr 29 16:42 Documents\r\n
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Downloads\r\n
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Music\r\n
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Pictures\r\n
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Public\r\n
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Templates\r\n
+    drwxr-xr-x    2 1000     1000         4096 Feb 23 06:37 Videos\r\n
+    dr-xr-x---    4 65534    65534        4096 Apr 20 17:53 ftp\r\n
+
+```
+
+
 ```diff
-+ Flag : 
++ Flag : 17:53
 ```
 
 ## 11	  What domain was the user connected to in packet 27300? 
