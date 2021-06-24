@@ -138,7 +138,9 @@ Filter for FTP traffic >> Follow FTP Stream
 
 ## 2	  What is the IPv6 address of the DNS server used by 192.168.1.26? (####::####:####:####:####) 
 
-Let's load capture file to anayze the DNS traffic, Since we are looking for the DNS server at 192.168.1.26 first let we look for the DNS server for the current capture. DNS Servce run on port 53 with UDP Protocol and we will filter the traffic for port & IPv6
+To analyze UDP DNS traffic: Observe the traffic captured in the top Wireshark packet list pane. To view only UDP traffic related to the DHCP renewal, type udp. port == 53 (lower case) in the Filter box.
+
+Let's load capture file to anayze the DNS traffic, Since we are looking for the DNS server at 192.168.1.26 first let we look for the DNS server for the current capture. DNS Servce run on port 53 with UDP Protocol and we will filter the traffic for port & IPv6.
 
 let Look for the actual UDP Traffic from Statistics Menu >> Conversations >> UDP Tab and Check for **Limit to dislpay filter**
 
@@ -174,8 +176,25 @@ for Packet 15174 its was IPv6 DNS request for www.7-Zip.org
 
 ## 4	  How many UDP packets were sent from 192.168.1.26 to 24.39.217.246? 
 
+Let look into the PCap file to know about the total count of packets, just re call couple of display filters in Wireshark usnig below references.
+ - https://wiki.wireshark.org/DisplayFilters
+ - https://www.wireshark.org/docs/dfref/u/udp.html
+
+Lets use "udp" filter to show udp packets only where it display filtered packets with count #2137 out of total packets 45024 
+
+![udp filter](Q4_0.PNG)
+
+Lets get down to the required filter "ip.src == 192.168.1.26 && ip.dst == 24.39.217.246" to filter required packets only
+
+![Udp Filter 2](Q4_1.PNG)
+
+Since we have got both TCP and UDP packets let filter for only UDP which we have got only 10 conversations btw 192.168.1.26 to 24.39.217.246
+
+![UDP Final Filter](Q4_2.PNG)
+
+
 ```diff
-+ Flag :
++ Flag : 10
 ```
 
 
