@@ -258,7 +258,7 @@ Analyze pcap in Wireshark, For TLS 1.2 with filter "tls" and search for 'da4a000
 + Flag : 04edcc123af7b13e90ce101a31c2f996f471a7c8f48a1b81d765085f548059a550f3f4f62ca1f0e8f74d727053074a37bceb2cbdc7ce2a8994dcd76dd6834eefc5438c3b6da929321f3a1366bd14c877cc83e5d0731b7f80a6b80916efd4a23a4d
 ```
 
-## 8	  What is the first TLS 1.3 client random that was used to establish a connection with protonmail.com? \
+## 8	  What is the first TLS 1.3 client random that was used to establish a connection with protonmail.com?
 
 As per available details with pcap protomail.com resolves ip address 185.70.41.35 let search for filter "ip.dst==185.70.41.35 && tls"
 
@@ -272,7 +272,7 @@ the first packet with number 17992 is initiated client hello with protonmail.com
 + Flag : 24e92513b97a0348f733d16996929a79be21b0b1400cd7e2862a732ce7775b70
 ```
 
-## 9	  What is the first TLS 1.3 client random that was used to establish a connection with protonmail.com? 
+## 9	   What country is the MAC address of the FTP server registered in? (two words, one space in between) 
 
 ```diff
 + Flag : 
