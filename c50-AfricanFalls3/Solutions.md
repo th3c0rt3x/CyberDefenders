@@ -156,7 +156,7 @@ from above image we came to know there is IPv6 DNS traffic server from fe80::b01
 
 ## 3	 What domain is the user looking up in packet 15174? 
 
-Let Goto to packet 15174 by Ctrl+G where it will ask you for Packet number where you want to go
+Let Goto to packet 15174 by Ctrl+G where it will ask you for Packet number where you want to go or else you can use filter "frame.number == 15174"
 
 ![Go to Packet](Q3_0.PNG)
 
