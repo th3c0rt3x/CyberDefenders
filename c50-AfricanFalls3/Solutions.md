@@ -293,8 +293,7 @@ Vendor: 	PCS Systemtechnik GmbH
 Address: 	600 Suffold St
 Lowell MA 01854
 US
-``
-
+```
 
 ```diff
 + Flag : United States
