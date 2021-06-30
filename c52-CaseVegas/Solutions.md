@@ -26,3 +26,134 @@ Challenge looks like mixed version of online OSINT challenges. I will add couple
 ```diff
 + Flag : 
 ```
+
+
+
+## 2	  
+
+```diff
++ Flag : 
+```
+
+
+
+## 3	  
+
+```diff
++ Flag : 
+```
+
+
+
+## 4	  
+
+```diff
++ Flag : 
+```
+
+
+## 5	  
+
+```diff
++ Flag : 
+```
+
+
+## 6	  
+
+```diff
++ Flag : 
+```
+
+
+## 7	  
+
+```diff
++ Flag : 
+```
+
+
+## 8	  
+
+```diff
++ Flag : 
+```
+
+
+## 9	  
+
+```diff
++ Flag : 
+```
+
+
+## 10	  
+
+```diff
++ Flag : 
+```
+
+
+## 11	  
+
+```diff
++ Flag : 
+```
+
+
+## 12	  
+
+```diff
++ Flag : 
+```
+
+
+## 13	  
+
+```diff
++ Flag : 
+```
+
+
+## 14	  
+
+```diff
++ Flag : 
+```
+
+
+## 15	  
+
+```diff
++ Flag : 
+```
+
+
+## 16	  
+
+```diff
++ Flag : 
+```
+
+
+## 17	  
+
+```diff
++ Flag : 
+```
+
+
+## 18	  
+
+```diff
++ Flag : 
+```
+
+
+## 19	  
+
+```diff
++ Flag : 
+```
+
+
