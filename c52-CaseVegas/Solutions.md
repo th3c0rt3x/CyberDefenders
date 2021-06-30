@@ -66,8 +66,16 @@ https://en.m.wikipedia.org/wiki/El_Cortez_(Las_Vegas)
 
 ### 3	  File->Chapel: This chapel has a live webcam. What is the name of the chapel?
 
+Look at video especial 27:20 where can get the same pic from video. lets check for "Live Cams NV US"  lead to earthcams.com where we just search for Chapel NV.
+
+https://www.earthcam.com/search/ft_search.php?term=Chapel+NV
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_3_1.PNG)
+
+The chapel's name is Elvis Wedding Chapel
+
 ```diff
-+ Flag : 
++ Flag : Elvis Wedding Chapel
 ```
 
 
