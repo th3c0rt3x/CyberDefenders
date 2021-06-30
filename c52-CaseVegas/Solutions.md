@@ -28,7 +28,7 @@ We need to play the video LV.MP4 and watch when did the vechile appeared .
 
 after watching the 37 minitues videos the number plated car started appearing at 35:33 and we can have clear visibility of number plate at last few seconds of the video. (36:50 to 37:03).
 
-![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_1_1.PNG)
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_1_1.png)
 
 266LYK license plate is registered to a 2013 TOYOTA SCION tC in Nevada state. (Source: https://findbyplate.com/US/NV/266LYK/)
 
