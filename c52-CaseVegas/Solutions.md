@@ -153,7 +153,7 @@ On next to road yellow color vechile is placed at Tux & Gown (30:56)
 + Flag : Tux & Gown
 ```
 
-*last updated on 0:01:06.05 A.M. IST*
+
 
 ### 8	  Find MGM financial report in the form of a PDF document (not website) which contains the words: 'Consolidated net revenues increased 13% compared to the prior-year quarter to $3.2 billion' Submit the URL as an answer.
 
@@ -182,6 +182,8 @@ Check google map history or extract the number from the video. The number is 702
 ```diff
 + Flag : 702-735-5700
 ```
+
+*last updated on 0:01:20.05 A.M. IST*
 
 
 ### 10	  File->Number: Who is the number's owner?
