@@ -157,8 +157,15 @@ On next to road yellow color vechile is placed at Tux & Gown (30:56)
 
 ### 8	  Find MGM financial report in the form of a PDF document (not website) which contains the words: 'Consolidated net revenues increased 13% compared to the prior-year quarter to $3.2 billion' Submit the URL as an answer.
 
+Let use Google dork for  'MGM "Consolidated net revenues increased 13% compared to the prior-year quarter to $3.2 billion" type:pdf'
+
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_8_1.PNG)
+
+http://q4live.s22.clientfiles.s3-website-us-east-1.amazonaws.com/513010314/files/doc_financials/quarterly/2019/q2/Q2-2019-ER-FINAL-(006).pdf
+
 ```diff
-+ Flag : 
++ Flag : http://q4live.s22.clientfiles.s3-website-us-east-1.amazonaws.com/513010314/files/doc_financials/quarterly/2019/q2/Q2-2019-ER-FINAL-(006).pdf
 ```
 
 
