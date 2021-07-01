@@ -112,10 +112,19 @@ Just ask same Question to Google
 
 ### 6	  On 30/09/2017 at 14:47, Stephen Paddock was seen on CCTV footage. Where was he?
 
+*Stephen Paddock* Who is he :interrobang:
 
+Lets search who is this *Stephen Paddock* (Since I am from native india I did not follow much news about US Region) 
+
+Ooh no I could not explain how feels when I look at google about this man, 
+
+https://en.wikipedia.org/wiki/Stephen_Paddock I am not going to explain anything relates to this Question try to solve directly lets look at the videos youtube https://www.youtube.com/watch?v=6ZRgVX8SYX4
+or WT Post https://www.washingtonpost.com/news/post-nation/wp/2018/05/02/las-vegas-police-release-video-footage-recorded-inside-gunman-stephen-paddocks-hotel-suite/
+
+If you watch the above videos the said guy is showed at Elevator
 
 ```diff
-+ Flag : 
++ Flag : Elevator
 ```
 
 
