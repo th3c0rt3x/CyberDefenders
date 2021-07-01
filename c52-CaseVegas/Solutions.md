@@ -108,7 +108,7 @@ Just ask same Question to Google
 ```diff
 + Flag : 01/10/2017
 ```
-*last updated on 7:56:33.71 A.M. IST*
+
 
 ### 6	  On 30/09/2017 at 14:47, Stephen Paddock was seen on CCTV footage. Where was he?
 
@@ -127,6 +127,7 @@ If you watch the above videos the said guy is showed at Elevator
 + Flag : Elevator
 ```
 
+*last updated on 9:25:59.76 A.M. IST*
 
 ### 7	  File->Vehicle.png: This vehicle may be related to our investigation. What place did it go to?
 
