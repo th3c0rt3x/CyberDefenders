@@ -108,9 +108,11 @@ Just ask same Question to Google
 ```diff
 + Flag : 01/10/2017
 ```
-
+*last update on 7:56:33.71 A.M. IST*
 
 ### 6	  On 30/09/2017 at 14:47, Stephen Paddock was seen on CCTV footage. Where was he?
+
+
 
 ```diff
 + Flag : 
