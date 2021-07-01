@@ -171,8 +171,16 @@ http://q4live.s22.clientfiles.s3-website-us-east-1.amazonaws.com/513010314/files
 
 ### 9	  File->Number: What is the complete number?
 
+Let look at video inbtw 33:00 to 31:00
+
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_9_1.PNG)
+
+Check google map history or extract the number from the video. The number is 702-735-5700.
+
+
 ```diff
-+ Flag : 
++ Flag : 702-735-5700
 ```
 
 
