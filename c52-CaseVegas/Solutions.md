@@ -82,8 +82,20 @@ The chapel's name is Elvis Wedding Chapel
 
 ### 4	  File->Chapel: What strip hotel does the chapel have a view of?
 
+Use Google Maps Streetview to find the view and name of the hotel. Lets search for "Elvis Wedding Chapel"
+
+https://www.google.com/maps/search/Elvis+Wedding+Chapel/@36.1478021,-115.154467,16z
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_4_1.PNG)
+
+https://www.google.com/maps/d/viewer?msa=0&ie=UTF8&t=h&ll=36.14660487818913%2C-115.15606554973755&mid=1JEkfH9bJtMKrVCMHrKGPP_QmMys&z=18 (9th PIC from street view)
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_4_2.PNG)
+
+as per street view The STRAT Hotel, Casino & SkyPod hotel has view of Chapel
+
 ```diff
-+ Flag : 
++ Flag : The STRAT (looks like Flag is CaseSensitive)
 ```
 
 
