@@ -101,8 +101,12 @@ as per street view The STRAT Hotel, Casino & SkyPod hotel has view of Chapel
 
 ### 5	  What date did the Mandalay Bay shooting take place?
 
+Just ask same Question to Google
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_5_1.PNG)
+
 ```diff
-+ Flag : 
++ Flag : 01/10/2017
 ```
 
 
