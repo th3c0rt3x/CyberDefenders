@@ -127,14 +127,33 @@ If you watch the above videos the said guy is showed at Elevator
 + Flag : Elevator
 ```
 
-*last updated on 9:25:59.76 A.M. IST*
+
 
 ### 7	  File->Vehicle.png: This vehicle may be related to our investigation. What place did it go to?
 
+Lets Check the last 10 mins of the video, about from 29th minute to 31st mins its been passed to couple of buildings and places 
+
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_7_1.PNG)
+
+where we can able to observe
+
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_7_2.PNG)
+
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_7_3.PNG)
+
+
+![](https://github.com/th3c0rt3x/CyberDefenders/blob/main/c52-CaseVegas/c52_7_5.PNG)
+
+On next to road yellow color vechile is placed at Tux & Gown (30:56)
+
 ```diff
-+ Flag : 
++ Flag : Tux & Gown
 ```
 
+*last updated on 0:01:06.05 A.M. IST*
 
 ### 8	  Find MGM financial report in the form of a PDF document (not website) which contains the words: 'Consolidated net revenues increased 13% compared to the prior-year quarter to $3.2 billion' Submit the URL as an answer.
 
